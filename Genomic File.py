@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns 
 
 # Downloading FASTA FILE
-Entrez.email = "shaheerdar085@gmail.com"
+Entrez.email = "your email"
 handle = Entrez.einfo()
 record = Entrez.read(handle)
 handle.close()
@@ -146,6 +146,7 @@ plt.set_xlabel("Position on Reads")
 plt.set_ylabel("Phred Scores")
 plt.xticklabels([str(x) for x in range(26, max(qual_pos.keys()) + 1)])
 plt.show()
+
 
 
         
